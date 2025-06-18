@@ -1,0 +1,308 @@
+/* Estilo global */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #508d41;
+    color: #333;
+}
+
+header {
+    background-color: #4cad50;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Esto asegura que los elementos se distribuyan */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    background-color: #5cb65c; /* Color de fondo del navbar */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.nav-menu li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white; /* Color del texto del enlace */
+    padding: 10px; /* Espaciado interno alrededor del texto */
+    border-bottom: 2px solid #9bd9c8; /* Borde inferior transparente por defecto */
+    transition: border-color 0.3s; /* Transición suave al cambiar el color del borde */
+}
+
+.nav-menu li a:hover {
+    border-bottom: 2px solid white; /* Borde inferior blanco al pasar el ratón */
+}
+
+.nav-menu a:hover {
+    background-color: #3e8e41;
+}
+
+/* Sección Hero */
+.hero {
+    position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    overflow: hidden; /* Asegúrate de que no se desborde */
+}
+.hero::before {
+    content: ''; /* Requerido para el pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Alinea a la parte superior */
+    left: 0; /* Alinea a la izquierda */
+    right: 0; /* Alinea a la derecha */
+    bottom: 0; /* Alinea a la parte inferior */
+    background-image: url('inicio.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    opacity: 0.5; /* Cambia este valor para ajustar la opacidad */
+    z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #218838;
+}
+
+/* Sección de contenido */
+.content-section {
+    padding: 60px 20px;
+    background-color: #a2dbac;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.card {
+    min-width: 250px;
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Botones secundarios */
+.btn-secondary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de scroll horizontal */
+.scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+
+/* Botones de desplazamiento */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroll-btn.left {
+    left: 0;
+    display: none; /* Se oculta hasta que el usuario se desplace hacia la derecha */
+}
+
+.scroll-btn.right {
+    right: 40px;
+}
+
+/* Estilos para flechas */
+.scroll-btn i {
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+.header-description {
+    text-align: center;
+    background-color: #5cb85c; /* Un color que combine con el tema */
+    color: white;
+    padding: 20px 0;
+}
+
+.header-description h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-description p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+.logo-img {
+    width: 192px;  /* Ancho de la imagen */
+    height: 192px; /* Alto de la imagen */
+}
+
+.logo {
+    display: inline-block; /* Mantiene el contenedor del logo en línea */
+    width: 24px;  /* Ancho del contenedor */
+    height: 24px; /* Alto del contenedor */
+}
+
+
+/* Sección de Contacto */
+.contact-section {
+    position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+    padding: 60px 20px;
+    text-align: center;
+    color: white; /* Cambia el color del texto si es necesario */
+}
+
+/* Pseudo-elemento para la imagen de fondo */
+.contact-section::before {
+    content: ''; /* Requerido para el pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Alinea a la parte superior */
+    left: 0; /* Alinea a la izquierda */
+    right: 0; /* Alinea a la derecha */
+    bottom: 0; /* Alinea a la parte inferior */
+    background-image: url('inicio.jpg'); /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    opacity: 0.5; /* Cambia este valor para ajustar la opacidad */
+    z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Estilo del formulario */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;    color: white;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permitir cambiar el tamaño verticalmente */
+}
+
+/* Botón de enviar */
+.btn-primary {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #218838;
+}
+.user-count {
+    margin-left: auto; /* Empuja el contador a la derecha */
+    font-size: 14px; /* Cambia el tamaño de la fuente si es necesario */
+    color: white; /* Cambia el color del texto si es necesario */
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}

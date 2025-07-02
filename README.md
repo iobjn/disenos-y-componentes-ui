@@ -16,8 +16,8 @@ Aquí encontrarás una descripción de los proyectos alojados en este repositori
 -   **Ruta:** `Skillup proyect html escolar uso libre`
 -   **Descripción:** Un proyecto web básico desarrollado en **HTML** como parte de un trabajo escolar para la plataforma SkillUp. El código es de uso libre y puede ser una buena referencia para estudiantes que están comenzando con desarrollo web.
 
-### 3. Prototipos de Pantallas
--   **Ruta:** `prototipos-de-pantallas`
+### 3. Prototipos de PDF IN HTML
+-   **Ruta:** `Youtube\PDF_In_HTML`
 -   **Descripción:** Esta carpeta contiene prototipos de pantallas, que son guías visuales que representan la estructura y el diseño de las interfaces de usuario para diversos proyectos o aplicaciones. Estos prototipos se crean utilizando diferentes herramientas de diseño y sirven como un paso preliminar antes del desarrollo real, ayudando a definir la experiencia del usuario y la funcionalidad de la interfaz.
 
 ---

@@ -1,0 +1,8 @@
+
+    .pdf-embed {
+        display: block; /* Lo convierte en un elemento de bloque */
+        width: 800px; /* Necesita un ancho definido */
+        height: 600px; /* Altura para el ejemplo */
+        margin-left: auto; /* Margen izquierdo automático */
+        margin-right: auto; /* Margen derecho automático */
+         /* La línea de arriba se puede abreviar como: margin: 0 auto; */}
